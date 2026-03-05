@@ -3,10 +3,10 @@ import { usePharmacy } from '../../context/PharmacyContext';
 import { ManagerMetrics } from './ManagerMetrics';
 import { ManagerInventory } from './ManagerInventory';
 import { ManagerRegistry } from './ManagerRegistry';
-import { Tabs, LayoutDashboard, Package, FileText, UserPlus } from 'lucide-react';
+import { LayoutDashboard, Package, FileText, UserPlus } from 'lucide-react';
 import { clsx } from 'clsx';
 
-type Tab = 'metrics' | 'inventory' | 'prescriptions' | 'registry';
+type Tab = 'metrics' | 'inventory' | 'prescriptions' | 'registry' | 'admin_settings';
 
 export const ManagerDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>('metrics');

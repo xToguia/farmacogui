@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { usePharmacy } from '../../context/PharmacyContext';
-import { Button } from '../ui/Button';
-import { Input } from '../ui/Input';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { Plus, Building2, Stethoscope } from 'lucide-react';
 
 export const ManagerRegistry: React.FC = () => {
