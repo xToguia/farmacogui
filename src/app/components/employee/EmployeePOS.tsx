@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { usePharmacy } from '../../context/PharmacyContext';
-import { Button } from '../ui/Button';
-import { Input } from '../ui/Input';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { Search, ShoppingCart, Truck, Check, X, Plus, Minus } from 'lucide-react';
 import { clsx } from 'clsx';
 import { toast } from 'sonner';
@@ -142,8 +142,8 @@ export const EmployeePOS: React.FC = () => {
                 </div>
 
                 <div>
+                   <label className="block text-sm font-medium text-gray-700 mb-2">Nome do Paciente/Cliente</label>
                    <Input 
-                      label="Nome do Paciente/Cliente" 
                       value={customerName} 
                       onChange={e => setCustomerName(e.target.value)}
                       placeholder="Opcional"
